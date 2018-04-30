@@ -1,9 +1,0 @@
-#!/bin/bash -e
-
-INSTALL_PATH="/opt/satoshilabs/bitcore-zec/"
-BIN=$(realpath "$INSTALL_PATH"/bitcore/node_modules/bitcore-node-zcash/bin/)
-DATA="$INSTALL_PATH/home/.bitcore/data"
-CONF="$DATA/zcash.conf"
-
-exec "$BIN"/zcash-cli --conf="$CONF" --datadir="$DATA" "$@"
-

@@ -1,9 +1,0 @@
-/opt/satoshilabs/bitcore-btg/home/.bitcore/data/debug.log {
-        rotate 7
-        daily
-        compress
-        missingok
-        notifempty
-        copytruncate
-}
-
