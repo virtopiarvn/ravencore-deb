@@ -1,3 +1,3 @@
-/opt/satoshilabs/bitcore-btc/home/.bitcore/data/bitcoin.conf
-/opt/satoshilabs/bitcore-btc/home/.bitcore/bitcore-node.json
-/etc/nginx/sites-available/nginx-bitcore-btc
+/opt/underdarkskies/ravencore-rvn/home/.raven/data/raven.conf
+/opt/underdarkskies/ravencore-rvn/home/.ravencore/ravencore-node.json
+/etc/nginx/sites-available/nginx-ravencore-rvn

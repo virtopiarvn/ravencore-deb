@@ -2,7 +2,7 @@
 
 case "$1" in
 	purge)
-		deluser bitcore-btc || true
+		deluser ravencore-rvn || true
 		;;
 esac
 

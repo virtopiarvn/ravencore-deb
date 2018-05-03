@@ -1,6 +1,6 @@
-bitcore /opt/satoshilabs/bitcore-btc
-bitcore-btc-cli /usr/bin
-bitcore-btc-daemon /usr/bin
-bitcoin.conf /opt/satoshilabs/bitcore-btc/home/.bitcore/data
-bitcore-node.json /opt/satoshilabs/bitcore-btc/home/.bitcore
-nginx-bitcore-btc /etc/nginx/sites-available
+ravencore /opt/underdarkskies/ravencore-rvn
+ravencore-rvn-cli /usr/bin
+ravencore-rvn-daemon /usr/bin
+bitcoin.conf /opt/underdarkskies/ravencore-rvn/home/.ravencore/data
+ravencore-node.json /opt/underdarkskies/ravencore-rvn/home/.ravencore
+nginx-ravencore-rvn /etc/nginx/sites-available
