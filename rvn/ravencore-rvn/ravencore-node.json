@@ -25,8 +25,8 @@
     "ravend": {
       "sendTxLog": "/opt/underdarkskies/ravencore-rvn/home/.ravencore/pushtx.log",
       "spawn": {
-        "datadir": "/opt/underdarkskies/ravencore-btc/home/.ravencore/data",
-        "exec": "/opt/underdarkskies/ravencore-btc/ravencore/node_modules/ravencore-node/bin/ravend",
+        "datadir": "/opt/underdarkskies/ravencore-rvn/home/.ravencore/data",
+        "exec": "/opt/underdarkskies/ravencore-rvn/ravencore/node_modules/ravencore-node/bin/ravend",
         "rpcqueue": 1000,
         "rpcport": 8766,
         "zmqpubrawtx": "tcp://127.0.0.1:28332",
