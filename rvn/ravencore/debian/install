@@ -3,4 +3,4 @@ ravencore-cli /usr/bin
 ravencore-daemon /usr/bin
 raven.conf /opt/under/ravencore/home/.ravencore/data
 ravencore-node.json /opt/under/ravencore/home/.ravencore
-nginx-ravencore-rvn /etc/nginx/sites-available
+nginx-ravencore /etc/nginx/sites-available

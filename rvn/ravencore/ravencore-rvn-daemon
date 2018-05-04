@@ -5,4 +5,4 @@ BIN=$(realpath "$INSTALL_PATH"/ravencore/node_modules/ravencore-node/bin/ravenco
 DATA="$INSTALL_PATH/home/.ravencore/data"
 CONF="$DATA/raven.conf"
 
-exec sudo -u ravencore-rvn "$BIN/ravend" --conf="$CONF" --datadir="$DATA" "$@"
+exec sudo -u ravencore "$BIN/ravend" --conf="$CONF" --datadir="$DATA" "$@"

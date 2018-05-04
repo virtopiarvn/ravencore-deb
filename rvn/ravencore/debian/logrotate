@@ -1,4 +1,4 @@
-/opt/underdarkskies/ravencore-rvn/home/.ravencore/data/debug.log {
+/opt/under/ravencore/home/.ravencore/data/debug.log {
         rotate 7
         daily
         compress
