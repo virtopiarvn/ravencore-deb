@@ -14,5 +14,5 @@ RUN apt-get update && \
 RUN apt-get update && \
     apt-get -qy install nodejs python3 make build-essential devscripts dh-systemd
 RUN npm install npm@latest -g
-ADD ravencore/ /root/ravencore
-RUN ( cd /root/ravencore && debuild -uc -us )
+ADD ravencore-rvn/ /root/ravencore-rvn
+RUN ( cd /root/ravencore-rvn && debuild -uc -us )

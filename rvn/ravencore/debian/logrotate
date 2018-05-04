@@ -1,0 +1,8 @@
+/opt/underdarkskies/ravencore-rvn/home/.ravencore/data/debug.log {
+        rotate 7
+        daily
+        compress
+        missingok
+        notifempty
+        copytruncate
+}
