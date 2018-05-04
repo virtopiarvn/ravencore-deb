@@ -9,24 +9,24 @@ Build DEB for coin
 
 First installation on target machine
 ------------------------------------
-* ```apt-get install apt-transport-https && dpkg -i <package_name>```
-* ```apt-get update && apt-get -f install```
+* ```sudo apt-get install -y apt-transport-https curl &&  sudo dpkg -i <package_name>```
+* ```sudo apt-get update && sudo apt-get -f install```
 
 Or you can use gdebi
 
-* ```gdebi <package_name>```
+* ```sudo gdebi <package_name>```
 
 Upgrade on target machine
 -------------------------
-* ```dpkg -i <package_name>```
-* ```apt-get update && apt-get -f install```
+* ```sudo dpkg -i <package_name>```
+* ```sudo apt-get update && sudo apt-get -f install```
 
 Or use gdebi again
 
-* ```gdebi <package_name>```
+* ```sudo gdebi <package_name>```
 
-Updating ravencore version for coin
+Updating ravencore version
 ---------------------------------
-* Change version in git checkout in rvn/ravencore-rvn/Makefile
-* Create a new entry in rvn/ravencore-rvn/debian/changelog by using 'dch -i'
+* Change version in git checkout in rvn/ravencore/Makefile
+* Create a new entry in rvn/ravencore/debian/changelog by using 'dch -i'
 * Then build as usual

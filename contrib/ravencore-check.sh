@@ -4,7 +4,7 @@ import requests
 import sys
 import json
 
-COMPARE_URLS = ["raven.network"]
+COMPARE_URLS = ["ravencoin.network"]
 
 def check_ravencore(ravencore_url):
     sync_url = "https://%s/api/sync" % ravencore_url

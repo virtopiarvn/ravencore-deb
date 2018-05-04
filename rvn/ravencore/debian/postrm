@@ -2,7 +2,6 @@
 
 case "$1" in
 	purge)
-		deluser ravencore-rvn || true
+		deluser ravencore || true
 		;;
 esac
-

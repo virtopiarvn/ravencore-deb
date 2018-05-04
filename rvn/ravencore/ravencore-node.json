@@ -23,10 +23,10 @@
       "coinShort": "RVN"
     },
     "ravend": {
-      "sendTxLog": "/opt/underdarkskies/ravencore-rvn/home/.ravencore/pushtx.log",
+      "sendTxLog": "/opt/under/ravencore/home/.ravencore/pushtx.log",
       "spawn": {
-        "datadir": "/opt/underdarkskies/ravencore-rvn/home/.ravencore/data",
-        "exec": "/opt/underdarkskies/ravencore-rvn/ravencore/node_modules/ravencore-node/bin/ravend",
+        "datadir": "/opt/under/ravencore/home/.ravencore/data",
+        "exec": "/opt/under/ravencore/ravencore/node_modules/ravencore-node/bin/ravend",
         "rpcqueue": 1000,
         "rpcport": 8766,
         "zmqpubrawtx": "tcp://127.0.0.1:28332",

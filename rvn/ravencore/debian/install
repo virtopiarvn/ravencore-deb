@@ -1,6 +1,6 @@
-ravencore /opt/underdarkskies/ravencore-rvn
-ravencore-rvn-cli /usr/bin
-ravencore-rvn-daemon /usr/bin
-raven.conf /opt/underdarkskies/ravencore-rvn/home/.ravencore/data
-ravencore-node.json /opt/underdarkskies/ravencore-rvn/home/.ravencore
+ravencore /opt/under/ravencore
+ravencore-cli /usr/bin
+ravencore-daemon /usr/bin
+raven.conf /opt/under/ravencore/home/.ravencore/data
+ravencore-node.json /opt/under/ravencore/home/.ravencore
 nginx-ravencore-rvn /etc/nginx/sites-available
