@@ -7,7 +7,7 @@
     "insight-api",
     "insight-ui"
   ],
-  "allowedOriginRegexp": "^https:\/\/ravencoin\.network$",
+  "allowedOriginRegexp": "^https://ravencoin\\.network$",
   "messageLog": "",
   "servicesConfig": {
     "web": {
