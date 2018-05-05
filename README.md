@@ -55,7 +55,7 @@ $sudo service nginx stop
 $sudo service nginx restart
 $sudo service nginx status
 ````
-Undeploying deb based install file
+Undeploying a Ravencore Deb file
 ----
 ````
 $sudo apt-get install -y aptitude
