@@ -1,31 +1,64 @@
 Ravencore-deb
 ===========
+Packaging system to deploy Ravencoin Block Explorer
+**The current configuration of this repository creates deb packages suited to run on ubuntu, behind Cloudflare(snakeoil ssl only), and are customized for the domain https://ravencoin.network**
 
-Build DEB for coin
+Using the build environment 
 ------------------
-* Build requirements: make, docker.io
-* Run "make" in coin subdirectory
-* DEB file appear in coin subdirectory
+````
+$sudo apt-get update
+$sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common
+$curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+$sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+$sudo apt-get update
+$sudo apt-get install -y docker-ce git make
+$git clone https://github.com/underdarkskies/ravencore-deb
+$cd ravencore-deb/rvn
+$sudo make
+````
+DEB file will appear in ravencore-deb/rvn/
 
-First installation on target machine
+Deploying a Ravencore Deb file
 ------------------------------------
-* ```sudo apt-get install -y apt-transport-https curl &&  sudo dpkg -i <package_name>```
-* ```sudo apt-get update && sudo apt-get -f install```
+Download your deb to the home directory of your ubuntu instance
+````
+$sudo apt-get install -y apt-transport-https curl && sudo dpkg -i ravencore_4.7.3_amd64.deb
+$sudo apt-get update && sudo apt-get -f install -y
+$cd /etc/nginx/sites-enabled
+$sudo ln -s ../sites-available/nginx-ravencore .
+````
+at this point the ravencore service and nginx will automatically launch and run even after reboot
 
-Or you can use gdebi
+###Optional: add a redirect from www.example.com to example.com
+````$sudo nano /etc/nginx/conf.d/redirect.conf````
+and edit the file with:
+````
+server {
+    server_name www.example.com;
+    return 301 $scheme://example.com$request_uri;
+}
+````
+Restart NGINX
+````$sudo service nginx restart````
 
-* ```sudo gdebi <package_name>```
+##Helpful commands to manage your Deb based install:
+````
+$sudo service ravencore start
+$sudo service ravencore stop
+$sudo service ravencore restart
+$sudo service ravencore status
 
-Upgrade on target machine
--------------------------
-* ```sudo dpkg -i <package_name>```
-* ```sudo apt-get update && sudo apt-get -f install```
-
-Or use gdebi again
-
-* ```sudo gdebi <package_name>```
-
-Updating ravencore version
+$sudo service nginx start
+$sudo service nginx stop
+$sudo service nginx restart
+$sudo service nginx status
+````
+##Undeploying deb based install file
+````
+$sudo apt-get install -y aptitude
+$sudo aptitude purge ravencore
+````
+Updating Ravencore version
 ---------------------------------
 * Change version in git checkout in rvn/ravencore/Makefile
 * Create a new entry in rvn/ravencore/debian/changelog by using 'dch -i'
