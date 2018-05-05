@@ -29,7 +29,8 @@ $sudo ln -s ../sites-available/nginx-ravencore .
 ````
 at this point the ravencore service and nginx will automatically launch and run even after reboot
 
-###Optional: add a redirect from www.example.com to example.com
+Optional: add a redirect from www.example.com to example.com
+----
 ````$sudo nano /etc/nginx/conf.d/redirect.conf````
 and edit the file with:
 ````
@@ -41,7 +42,8 @@ server {
 Restart NGINX
 ````$sudo service nginx restart````
 
-##Helpful commands to manage your Deb based install:
+Helpful commands to manage your Deb based install:
+----
 ````
 $sudo service ravencore start
 $sudo service ravencore stop
@@ -53,7 +55,8 @@ $sudo service nginx stop
 $sudo service nginx restart
 $sudo service nginx status
 ````
-##Undeploying deb based install file
+Undeploying deb based install file
+----
 ````
 $sudo apt-get install -y aptitude
 $sudo aptitude purge ravencore
