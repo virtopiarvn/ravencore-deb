@@ -22,6 +22,7 @@ Deploying a Ravencore Deb file
 ------------------------------------
 Download your deb to the home directory of your ubuntu instance
 ````
+$wget https://github.com/underdarkskies/ravencore-deb/releases/download/<tag>/ravencore_<version>_amd64.deb
 $sudo apt-get install -y apt-transport-https curl && sudo dpkg -i ravencore_4.7.3_amd64.deb
 $sudo apt-get update && sudo apt-get -f install -y
 $cd /etc/nginx/sites-enabled
