@@ -27,6 +27,8 @@ $sudo apt-get install -y apt-transport-https curl && sudo dpkg -i ravencore_4.7.
 $sudo apt-get update && sudo apt-get -f install -y
 $cd /etc/nginx/sites-enabled
 $sudo ln -s ../sites-available/nginx-ravencore .
+$sudo rm default
+$sudo rm ../sites-available/default
 ````
 at this point the ravencore service and nginx will automatically launch and run even after reboot
 
@@ -41,7 +43,11 @@ server {
 }
 ````
 Restart NGINX
-````$sudo service nginx restart````
+````
+$sudo printf "[Service]\nExecStartPost=/bin/sleep 0.1\n" | sudo tee /etc/systemd/system/nginx.service.d/override.conf
+$sudo systemctl daemon-reload
+$sudo service nginx restart
+````
 
 Helpful commands to manage your Deb based install:
 ----
