@@ -31,6 +31,8 @@ $sudo ln -s ../sites-available/nginx-ravencore .
 $sudo rm default
 $sudo rm ../sites-available/default
 $sudo systemctl enable mongod.service
+$sudo service mongod start
+$sudo service ravencore restart
 $sudo printf "[Service]\nExecStartPost=/bin/sleep 0.1\n" | sudo tee /etc/systemd/system/nginx.service.d/override.conf
 $sudo systemctl daemon-reload
 $sudo service nginx restart
