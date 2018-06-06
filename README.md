@@ -22,8 +22,7 @@ Deploying a Ravencore Deb file
 ------------------------------------
 Download your deb to the home directory of your ubuntu instance
 ````
-$wget https://github.com/underdarkskies/ravencore-deb/releases/download/<tag>/ravencore_<version>_amd64.deb
-$sudo apt-get install -y apt-transport-https curl && sudo dpkg -i ravencore_4.7.3_amd64.deb
+$sudo apt-get install -y apt-transport-https curl && sudo dpkg -i ravencore_<version>_amd64.deb
 ##the above will show errors, running the next command resolves those errors##
 $sudo apt-get update && sudo apt-get -f install -y
 $cd /etc/nginx/sites-enabled
@@ -57,11 +56,13 @@ $sudo service ravencore start
 $sudo service ravencore stop
 $sudo service ravencore restart
 $sudo service ravencore status
+$journalctl -u ravencore
 
 $sudo service nginx start
 $sudo service nginx stop
 $sudo service nginx restart
 $sudo service nginx status
+journalctl -u nginx
 ````
 Undeploying a Ravencore Deb file
 ----
