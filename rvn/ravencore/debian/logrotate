@@ -1,4 +1,4 @@
-/opt/under/ravencore/home/.ravencore/data/debug.log {
+/home/chinchilly/ravencore/home/.ravencore/data/debug.log {
         rotate 7
         daily
         compress
