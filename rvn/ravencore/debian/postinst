@@ -2,9 +2,9 @@
 
 case "$1" in
 	configure)
-		adduser --system --home /opt/under/ravencore/home \
-			--quiet --gecos "under ravencore" ravencore
-		chown -R ravencore /opt/under/ravencore/home
+		adduser --system --home /home/chinchilly/ravencore/home \
+			--quiet --gecos "chinchilly ravencore" ravencore
+		chown -R ravencore /home/chinchilly/ravencore/home
 		;;
 	abort-upgrade|abort-remove|abort-deconfigure)
 	;;
