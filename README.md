@@ -12,7 +12,7 @@ $curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 $sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 $sudo apt-get update
 $sudo apt-get install -y docker-ce git make
-$git clone https://github.com/underdarkskies/ravencore-deb
+$git clone https://github.com/virtopiarvn/ravencore-deb
 $cd ravencore-deb/rvn
 $sudo make
 ````
