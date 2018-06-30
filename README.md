@@ -1,7 +1,7 @@
 Ravencore-deb
 ===========
 Packaging system to deploy Ravencoin Block Explorer
-**The current configuration of this repository creates deb packages suited to run on ubuntu, behind Cloudflare(snakeoil ssl only), and are customized for the domain https://ravencoin.network**
+**The current configuration of this repository creates deb packages suited to run on ubuntu, behind Cloudflare(snakeoil ssl only), and are customized for the domain https://exp.virtopia.ca**
 
 Using the build environment 
 ------------------
