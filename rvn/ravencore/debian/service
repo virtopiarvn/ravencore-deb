@@ -1,13 +1,13 @@
 [Unit]
-Description=under ravencore
+Description=chinchilly ravencore
 
 [Service]
-ExecStart=/usr/bin/env nodejs --max_old_space_size=4096 /opt/under/ravencore/ravencore/bin/ravencored
+ExecStart=/usr/bin/env nodejs --max_old_space_size=4096 /home/chinchilly/ravencore/ravencore/bin/ravencored
 Restart=always
 RestartSec=5
 TimeoutStopSec=900
 User=ravencore
-WorkingDirectory=/opt/under/ravencore/home
+WorkingDirectory=/home/chinchilly/ravencore/home
 
 [Install]
 WantedBy=multi-user.target
