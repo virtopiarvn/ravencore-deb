@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-INSTALL_PATH="/opt/under/ravencore/"
+INSTALL_PATH="/home/chinchilly/ravencore/"
 BIN=$(realpath "$INSTALL_PATH"/ravencore/node_modules/ravencore-node/bin/ravencoin-*/bin/)
 DATA="$INSTALL_PATH/home/.ravencore/data"
 CONF="$DATA/raven.conf"
