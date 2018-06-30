@@ -30,10 +30,10 @@
 	  }
     },
     "ravend": {
-      "sendTxLog": "/opt/under/ravencore/home/.ravencore/pushtx.log",
+      "sendTxLog": "/home/chinchilly/ravencore/home/.ravencore/pushtx.log",
       "spawn": {
-        "datadir": "/opt/under/ravencore/home/.ravencore/data",
-        "exec": "/opt/under/ravencore/ravencore/node_modules/ravencore-node/bin/ravend",
+        "datadir": "/home/chinchilly/ravencore/home/.ravencore/data",
+        "exec": "/home/chinchilly/ravencore/ravencore/node_modules/ravencore-node/bin/ravend",
         "rpcqueue": 1000,
         "rpcport": 8766,
         "zmqpubrawtx": "tcp://127.0.0.1:28332",
