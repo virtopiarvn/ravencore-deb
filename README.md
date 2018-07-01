@@ -38,6 +38,35 @@ $sudo service nginx restart
 ````
 at this point the ravencore service and nginx will automatically launch and run even after reboot
 
+**Securing Things:** Change the default user and pass for mongo and RPC password for ravend
+
+## Mongo
+
+````
+sudo sed -i 's/"user": ""/"user": "username"/g' /home/chinchilly/ravencore/home/.ravencore/ravencore-node.json
+````
+````
+sudo sed -i 's/"password": ""/"password": "changeme"/g' /home/chinchilly/ravencore/home/.ravencore/ravencore-node.json
+````
+`mongo`
+````
+db.createUser(
+  {
+    user: "user",
+    pwd: "changeme",
+    roles: [ { role: "readWrite", db: "raven-api-livenet" } ]
+	
+  }
+)
+````
+`exit`
+
+## Ravend RPC Password
+````
+sudo sed -i 's/rpcpassword=local321/rpcpassword=changeme/g' /home/chinchilly/ravencore/home/.ravencore/data/raven.conf
+````
+
+
 Optional: add a redirect from www.example.com to example.com
 ----
 ````$sudo nano /etc/nginx/conf.d/redirect.conf````
