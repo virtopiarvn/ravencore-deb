@@ -33,7 +33,7 @@
       "sendTxLog": "/home/chinchilly/ravencore/home/.ravencore/pushtx.log",
       "spawn": {
         "datadir": "/home/chinchilly/ravencore/home/.ravencore/data",
-        "exec": "/home/chinchilly/ravencore/ravencore/node_modules/ravencore-node/bin/ravend",
+        "exec": "/home/chinchilly/ravencore/node_modules/ravencore-node/bin/ravend",
         "rpcqueue": 1000,
         "rpcport": 8766,
         "zmqpubrawtx": "tcp://127.0.0.1:28332",
