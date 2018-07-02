@@ -2,7 +2,7 @@
 Description=chinchilly ravencore
 
 [Service]
-ExecStart=/usr/bin/env nodejs --max_old_space_size=4096 /home/chinchilly/ravencore/ravencore/bin/ravencored
+ExecStart=/usr/bin/env nodejs --max_old_space_size=4096 /home/chinchilly/ravencore/bin/ravencored
 Restart=always
 RestartSec=5
 TimeoutStopSec=900
