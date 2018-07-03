@@ -1,4 +1,4 @@
-ravencore /home/chinchilly
+ravencore /home/chinchilly/ravencore
 ravencore-cli /usr/bin
 ravencore-daemon /usr/bin
 raven.conf /home/chinchilly/ravencore/home/.ravencore/data
